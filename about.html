@@ -1,30 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>О проекте — BurgerHub</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
+  <!-- Header (тот же, что и на главной) -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <span>BurgerHub</span>
+      </div>
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html" class="active">О нас</a></li>
+          <li><a href="index.html#menu">Меню</a></li>
+          <li><a href="index.html#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Основной контент -->
+  <main class="about-page">
+    <div class="container">
+      <h1>О проекте</h1>
+
+      <section class="about-section">
+        <h2>Описание проекта</h2>
+        <p>
+          BurgerHub — это сайт-визитка для небольшой бургерной, созданной с любовью к качественной еде.
+          Проект демонстрирует меню, философию заведения и помогает клиентам быстро найти информацию.
+        </p>
+      </section>
+
+      <section class="about-section">
+        <h2>Цели и задачи</h2>
+        <ul>
+          <li>Показать свежесть и качество ингредиентов</li>
+          <li>Сделать заказ максимально простым</li>
+          <li>Передать атмосферу уютной бургерной</li>
+          <li>Обеспечить адаптивный доступ с любого устройства</li>
+        </ul>
+      </section>
+
+      <section class="about-section">
+        <h2>Информация о команде</h2>
+        <p>
+          <strong>Алексей</strong> — шеф-повар, 10 лет в индустрии фастфуда, но с душой.<br>
+          <strong>Мария</strong> — дизайнер интерьера и автор идеи бургерной.<br>
+          <strong>Ты</strong> — веб-разработчик, создавший этот сайт ❤️
+        </p>
+      </section>
+
+      <section class="about-section">
+        <h2>История разработки</h2>
+        <p>
+          Сайт был создан в декабре 2025 года как учебный проект по веб-разработке.
+          Цель — освоить HTML, CSS, адаптивный дизайн и Git workflow.
+          В будущем планируется добавить онлайн-заказ, галерею и отзывы клиентов.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 BurgerHub. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- JS (для бургер-меню) -->
+  <script src="js/main.js"></script>
 </body>
-</html><header>
-  <div class="container">
-    <a href="index.html" class="logo">
-      <img src="img/logo.png" alt="Логотип">
-      <span>Название проекта</span>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Главная</a></li>
-        <li><a href="about.html">О проекте</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<footer>
-  <div class="container">
-    <p>&copy; 2025 Название проекта. Все права защищены.</p>
-  </div>
-</footer>
+</html>
