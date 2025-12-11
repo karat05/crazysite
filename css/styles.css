@@ -117,32 +117,55 @@ h2 {
   font-size: 2.2rem;
 }
 
-/* Menu Grid */
+/* Карточки бургеров — обновлённая версия */
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
 .burger-card {
   background: white;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  text-align: center;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.burger-card h3 {
+.burger-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(211, 84, 0, 0.2);
+}
+
+.burger-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.burger-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.burger-info h3 {
   color: #e74c3c;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  font-size: 1.4rem;
 }
 
-.price {
+.burger-info p {
+  color: #666;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.burger-info .price {
   font-weight: 700;
   color: #d35400;
   font-size: 1.3rem;
   display: block;
-  margin-top: 10px;
 }
 
 /* Contact */
