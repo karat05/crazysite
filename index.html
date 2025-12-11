@@ -10,21 +10,30 @@
 </head>
 <body>
   <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="logo">
-        <span>BurgerHub</span>
-      </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="#hero">Главная</a></li>
-          <li><a href="#about">О нас</a></li>
-          <li><a href="#menu">Меню</a></li>
-          <li><a href="#contact">Контакты</a></li>
-        </ul>
-      </nav>
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <span>BurgerHub</span>
     </div>
-  </header>
+
+    <!-- Бургер-иконка (только на мобильных) -->
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Навигация -->
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
   <!-- Hero -->
   <section id="hero" class="hero">
@@ -93,6 +102,7 @@
     <div class="container">
       <p>&copy; 2025 BurgerHub. Все права защищены Ярославом Рыжовым.</p>
     </div>
-  </footer>
+  </footer> 
+  <script src="js/main.js"></script>
 </body>
 </html>
